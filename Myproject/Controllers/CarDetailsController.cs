@@ -50,7 +50,6 @@ namespace Myproject.Controllers
         }
 
         // PUT: api/CarDetails/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCarDetail(string id, CarDetail carDetail)
         {
@@ -81,7 +80,6 @@ namespace Myproject.Controllers
         }
 
         // POST: api/CarDetails/booking
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost("booking")]
         public async Task<ActionResult<CarDetail>> PostCarDetail(CarDetail carDetail)
         {

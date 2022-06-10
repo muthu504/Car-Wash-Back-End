@@ -50,7 +50,6 @@ namespace Myproject.Controllers
         }
 
         // PUT: api/CarserviceFeedbacks/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCarserviceFeedback(int id, CarserviceFeedback carserviceFeedback)
         {
@@ -81,7 +80,6 @@ namespace Myproject.Controllers
         }
 
         // POST: api/CarserviceFeedbacks
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<CarserviceFeedback>> PostCarserviceFeedback(CarserviceFeedback carserviceFeedback)
         {

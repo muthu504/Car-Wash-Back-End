@@ -50,7 +50,6 @@ namespace Myproject.Controllers
         }
 
         // PUT: api/Customers/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCustomer(string id, Customer customer)
         {
@@ -81,7 +80,6 @@ namespace Myproject.Controllers
         }
 
         // POST: api/Customers/register
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Customer>> PostCustomer(Customer customer)
         {
@@ -134,29 +132,7 @@ namespace Myproject.Controllers
             return (_context.Customers?.Any(e => e.EmailId == id)).GetValueOrDefault();
         }
 
-        //public bool login(Customer customer)
-        //{
-        //    //		customerRepository.findAll();
-        //    List<Customer> users = customerRepository.findAll();
-        //    Optional<Customer> cred = customerRepository.findById(customer.getEmailId());
-
-        //    for (Customer user : users)
-        //    {
-        //        if (user.getEmailId().equals(customer.getEmailId()) &&
-        //                  user.getPassword().equals(customer.getPassword()))
-        //        {
-        //            return true;
-        //        }
-
-        //    }
-        //    return false;
-        //}
-        // POST: api/Customers/login
-        //[HttpGet("login")]
-        //public async Task<ActionResult<Customer>> Login(string id,string _password)
-        //{
-        //    return Ok((_context.Customers.Any(e => e.EmailId == id &&e.Password==_password)));
-        //}
+        
 
     }
 }
